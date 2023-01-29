@@ -18,15 +18,11 @@ universal_binaries:
   - replace: true
 
 brews:
-  - 
-    name: jsonformatter
-    homepage: https://github.com/apshada/cli-json-formatter
-    tap:
+  - github:
       owner: apshada
       name: homebrew-apshada
-    commit_author: 
-      name: apshada
-      email: apshada1@gmail.com
+    folder: Formula
+    homepage: https://github.com/apshada/cli-json-formatter
 
 checksum:
   name_template: 'checksums.txt'
