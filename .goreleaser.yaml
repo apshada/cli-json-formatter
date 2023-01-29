@@ -1,0 +1,32 @@
+builds:
+- binary: jsonformatter
+  goos:
+    - linux
+    - darwin
+    - windows
+  goarch:
+    - amd64
+  env:
+    - CGO_ENABLED=0
+  flags:
+    - -mod=vendor    
+
+release:
+  prerelease: auto
+
+universal_binaries:
+  - replace: true
+
+brews:
+  - 
+    name: jsonformatter
+    homepage: https://github.com/apshada/cli-json-formatter
+    tap:
+      owner: apshada
+      name: homebrew-apshada
+    commit_author: 
+      name: apshada
+      email: apshada1@gmail.com
+
+checksum:
+  name_template: 'checksums.txt'
