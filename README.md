@@ -15,7 +15,3 @@ To format a JSON file, use the following command:
 ```
 jsonformatter -f [file path]
 ```
-
-**Contributing**
-
-If you would like to contribute to the CLI JSON Formatter, please fork the repository, make your changes, and open a pull request.
